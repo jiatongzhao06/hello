@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: #000000;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; /* Set text color to white for better contrast */
+            font-family: Arial, sans-serif;
+            height: 100vh; /* Ensure body takes full height of viewport */
+        }
+
+        #mySidenav a {
+            position: absolute; /* Position them relative to the browser window */
+            left: -80px; /* Position them outside of the screen */
+            transition: 0.3s; /* Add transition on hover */
+            padding: 15px; /* 15px padding */
+            width: 150px; /* Set a specific width */
+            text-decoration: none; /* Remove underline */
+            font-size: 20px; /* Increase font size */
+            color: white; /* White text color */
+            border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+        }
+
+        #mySidenav a:hover {
+            left: 0; /* On mouse-over, make the elements appear as they should */
+        }
+
+        /* The about link: 20px from the top with a green background */
+        #about {
+            top: 20px;
+            background-color: #141414;
+        }
+
+        #me {
+            top: 80px;
+            background-color: #3a3a3a; /* Blue */
+        }
+
+        #projects {
+            top: 140px;
+            background-color: #6b6b6b; /* Red */
+        }
+
+        #contact {
+            top: 200px;
+            background-color: #c3c3c3 /* Light Black */
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .content img {
+            width: 300px; /* Adjust image size */
+            height: auto;
+            margin-bottom: 20px; /* Space between image and text */
+        }
+
+        .text {
+            max-width: 600px; /* Limit width of text for better readability */
+        }
+
+        .text h1 {
+            margin-top: 0;
+            color: #c3c3c3; /* Set color for title */
+        }
+
+        .text p {
+            line-height: 1.6; /* Improve readability */
+            color: #e0e0e0; /* Set color for paragraphs */
+        }
+
+        * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <a href="newpage.html" target="_blank">
+            <img id="me" src="me.JPG" alt="me">
+        </a>
+        <div class="text">
+            <h1>Stella Zhao</h1>
+            <p>Hi, I'm Stella! I'm a rising senior born on June 2, 2006, which makes me a Gemini. I love staying active and enjoy playing both basketball and volleyball. Beyond sports, I have a deep passion for interactive design and art. I create pieces that invite the audience to engage with my work through multiple senses, fostering a unique and immersive experience. I'm always looking for new ways to blend creativity with technology and connect with others who share my interests and passions.</p>
+            <p>please check more on my project section</p>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="indexa.html" id="about">Home</a>
+        <a href="index8.html" id="me">ME</a>
+        <a href="index6.html" id="projects">Projects</a>
+        <a href="index9.html" id="contact">Contact</a>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 9</div>
+          <img src="bb1.JPG" style="width:100%">
+          <div class="text">basketball</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 9</div>
+          <img src="bb2.JPG" style="width:100%">
+          <div class="text">basketball</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 9</div>
+          <img src="vb.JPG" style="width:100%">
+          <div class="text">volleyball</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 9</div>
+            <img src="a3.JPG" style="width:100%">
+            <div class="text">volleyball team</div>
+          </div>
+
+        
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 9</div>
+            <img src="a1.JPG" style="width:100%">
+            <div class="text">MVP</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 9</div>
+            <img src="f1.JPG" style="width:100%">
+            <div class="text">prom</div>
+          </div>
+        
+    
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 9</div>
+            <img src="f3.JPG" style="width:100%">
+            <div class="text">photobooth pic</div>
+          </div>
+
+
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 9</div>
+            <img src="r.JPG" style="width:100%">
+            <div class="text">rabbit</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">9/ 9</div>
+            <img src="tg.JPG" style="width:100%">
+            <div class="text">tangi</div>
+          </div>
+
+        
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: #e7d5d5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #mySidenav a {
+            position: absolute; /* Position them relative to the browser window */
+            left: -80px; /* Position them outside of the screen */
+            transition: 0.3s; /* Add transition on hover */
+            padding: 15px; /* 15px padding */
+            width: 100px; /* Set a specific width */
+            text-decoration: none; /* Remove underline */
+            font-size: 20px; /* Increase font size */
+            color: white; /* White text color */
+            border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+        }
+
+        #mySidenav a:hover {
+            left: 0; /* On mouse-over, make the elements appear as they should */
+        }
+
+        /* The about link: 20px from the top with a green background */
+        #about {
+            top: 20px;
+            background-color: #141414;
+        }
+
+        #me {
+            top: 80px;
+            background-color: #3a3a3a; /* Blue */
+        }
+
+        #projects {
+            top: 140px;
+            background-color: #6b6b6b; /* Red */
+        }
+
+        #contact {
+            top: 200px;
+            background-color: #c3c3c3 /* Light Black */
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            grid-template-rows: repeat(3, auto); /* 3 rows */
+            gap: 10px;
+            padding: 20px;
+            padding-top: 50px; /* Additional padding at the top */
+            padding-bottom: 50px; /* Additional padding at the bottom */
+        }
+
+        .gallery img {
+            width: 250px; /* Adjusted image width */
+            height: auto; 
+            display: block;
+            margin: 0 auto; /* Center images horizontally */
+        }
+        .gallery img:hover{
+            transform: rotate(2deg)
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <a href="index5.html" target="_blank"><img id="p1" src="p1.jpg" alt="Art 1"></a>
+        <a href="index7.html" target="_blank"><img id="p2" src="p2.jpg" alt="Art 2"></a>
+        <a href="index10.html" target="_blank"><img id="p3" src="p3.jpg" alt="Art 3"></a>
+        <a href="index11.html" target="_blank"><img id="p4" src="p4.jpg" alt="Art 4"></a>
+        <a href="index12.html" target="_blank"><img id="p5" src="p5.jpg" alt="Art 5"></a>
+        <a href="index13.html" target="_blank"><img id="p6" src="p6.jpg" alt="Art 6"></a>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="indexa.html" id="about">Home</a>
+        <a href="index8.html" id="me">ME</a>
+        <a href="index6.html" id="projects">Projects</a>
+        <a href="index9.html" id="contact">Contact</a>
+    </div>
+</body>
+</html>

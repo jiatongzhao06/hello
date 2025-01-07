@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color: #000000;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            align-items: flex-start;
+            color: white; /* Set text color to white for better contrast */
+            font-family: Arial, sans-serif;
+        }
+
+        #mySidenav a {
+            position: absolute; /* Position them relative to the browser window */
+            left: -80px; /* Position them outside of the screen */
+            transition: 0.3s; /* Add transition on hover */
+            padding: 15px; /* 15px padding */
+            width: 100px; /* Set a specific width */
+            text-decoration: none; /* Remove underline */
+            font-size: 20px; /* Increase font size */
+            color: white; /* White text color */
+            border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+        }
+
+        #mySidenav a:hover {
+            left: 0; /* On mouse-over, make the elements appear as they should */
+        }
+
+        /* The about link: 20px from the top with a green background */
+        #about {
+            top: 20px;
+            background-color: #141414;
+        }
+
+        #me {
+            top: 80px;
+            background-color: #3a3a3a; /* Blue */
+        }
+
+        #projects {
+            top: 140px;
+            background-color: #6b6b6b; /* Red */
+        }
+
+        #contact {
+            top: 200px;
+            background-color: #c3c3c3 /* Light Black */
+        }
+
+        .content {
+            display: flex;
+            margin-top: 20px;
+            padding-left: 40px; /* Additional padding on the left */
+        }
+
+        .content img {
+            width: 300px; /* Adjust image size */
+            height: auto;
+            margin-right: 20px; /* Space between image and text */
+        }
+
+        .text {
+            max-width: 600px; /* Limit width of text for better readability */
+        }
+
+        .text h1 {
+            margin-top: 0;
+            color: #909090; /* Set color for title */
+        }
+
+        .text p {
+            line-height: 1.6; /* Improve readability */
+            color: #cbcbcb; /* Set color for paragraphs */
+        }
+        .play-button {
+            background-color: #2e2e2e; /* Green background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 15px 32px; /* Some padding */
+            text-align: center; /* Centered text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Get the element to fit the button size */
+            font-size: 16px; /* Increase font size */
+            margin: 4px 2px; /* Some margin */
+            cursor: pointer; /* Pointer/hand icon */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .play-button:hover {
+            background-color: #d7d7d7; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <a href="newpage.html" target="_blank">
+            <img id="p6" src="p6.jpg" alt="Art 5">
+        </a>
+        <div class="text">
+            <h1>unfold</h1>
+            <p>Capturing the profound journey of aging, my artwork unfolds like a visual memoir. I employ acrylic paint, on acrylic board and spray paint to craft a narrative that seamlessly transitions from youth to the complexities of later years. Each stroke, guided by technical precision, echoes the emotional depth of my connection to the subject—my grandfather. The intention of the background from white to blue to silver signifies a homage to his childhood all the way to a metaphor that reveals the process of aging. This piece is more than a depiction; it's a contemplative exploration of life's cyclical nature, demonstrating both conceptual depth and technical finesse.
+            </p>
+            <p>The experimental process for this series involved a deliberate play with transparency and layering. I chose tracing paper for its see-through quality, enabling a dynamic exploration of how different facial expressions accumulate over time. The initial step was painting the entire face on the first layer. Then, with subsequent layers, I strategically added significant color blocks to represent the evolving features—shadows, wrinkles, and nuances that manifest with the passage of time.
+
+            </p>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="indexa.html" id="about">Home</a>
+        <a href="index8.html" id="me">ME</a>
+        <a href="index6.html" id="projects">Projects</a>
+        <a href="index9.html" id="contact">Contact</a>
+    </div>
+    <audio id="myAudio" src="heather.mp3" type="audio/mp3"></audio>
+<button class="play-button" onclick="playAudio()">Play Music</button>
+
+<script>
+    function playAudio() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+    }
+</script>
+
+</body>
+</html>

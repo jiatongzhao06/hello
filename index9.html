@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-instagram {
+            background: #cd0b8c;
+            color: white;
+        }
+
+        .fa-wechat {
+            background: #09b83e;
+            color: white;
+        }
+
+        .fa-facebook {
+            background: #3b5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #00aced;
+            color: white;
+        }
+
+        .fa-envelope {
+            background: #c71610;
+            color: white;
+        }
+
+        body {
+            background-color: #000000;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Full height of the viewport */
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: center; /* Center icons horizontally */
+            align-items: center; /* Center icons vertically */
+        }
+
+        #mySidenav a {
+            position: absolute; /* Position them relative to the browser window */
+            left: -80px; /* Position them outside of the screen */
+            transition: 0.3s; /* Add transition on hover */
+            padding: 15px; /* 15px padding */
+            width: 100px; /* Set a specific width */
+            text-decoration: none; /* Remove underline */
+            font-size: 20px; /* Increase font size */
+            color: white; /* White text color */
+            border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+        }
+
+        #mySidenav a:hover {
+            left: 0; /* On mouse-over, make the elements appear as they should */
+        }
+
+        #about {
+            top: 20px;
+            background-color: #141414;
+        }
+
+        #me {
+            top: 80px;
+            background-color: #3a3a3a; /* Blue */
+        }
+
+        #projects {
+            top: 140px;
+            background-color: #6b6b6b; /* Red */
+        }
+
+        #contact {
+            top: 200px;
+            background-color: #c3c3c3 /* Light Black */
+        }
+
+        .content {
+            display: flex;
+            margin-top: 20px;
+            padding-left: 4vw; /* Additional padding on the left */
+            left: 300vw;
+        }
+
+        .content img {
+            width: 300px; /* Adjust image size */
+            left: 30vw;
+            height: auto;
+            margin-right: 20px; /* Space between image and text */
+        }
+
+        .text {
+            max-width: 600px; /* Limit width of text for better readability */
+        }
+
+        .text h1 {
+            margin-top: 0;
+            color: #c3c3c3; /* Set color for title */
+        }
+
+        .text p {
+            line-height: 1.6; /* Improve readability */
+            color: #e0e0e0; /* Set color for paragraphs */
+        }
+
+        .play-button {
+            background-color: #2e2e2e; /* Green background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 15px 32px; /* Some padding */
+            text-align: center; /* Centered text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Get the element to fit the button size */
+            font-size: 16px; /* Increase font size */
+            margin: 4px 2px; /* Some margin */
+            cursor: pointer; /* Pointer/hand icon */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .play-button:hover {
+            background-color: #d7d7d7; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+    <div class="icon-container">
+        <a href="https://www.instagram.com/stellazhao06/" class="fa fa-instagram"></a>
+        <a href="https://www.wechat.com/" class="fa fa-wechat"></a>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="mailto:stellazhao06@gmail.com" class="fa fa-envelope"></a>
+    </div>
+    
+    <div class="content"></div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="indexa.html" id="about">Home</a>
+        <a href="index8.html" id="me">ME</a>
+        <a href="index6.html" id="projects">Projects</a>
+        <a href="index8.html" id="contact">Contact</a>
+    </div>
+
+</body>
+</html>
